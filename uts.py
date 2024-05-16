@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Dataset
-df = pd.read_csv('/home/arknsa/kf_analytics_data.csv')
+df = pd.read_csv('kf_analytics_data.csv')
 print(df)
 
 ## Information of Dataset
