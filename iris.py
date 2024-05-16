@@ -11,7 +11,7 @@ class IrisClassifierMRJOB(MRJob):
     def mapper(self, _, line):
 
         data = line.strip().split(",")
-        features = [float(x) for x in data[:-1]]
+        features = [float(x) for x in data[:1]]
         label = data[-1]
 
         yield None, (label, *features)
